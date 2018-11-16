@@ -233,7 +233,7 @@ function change() {
   let nickel = Math.floor(amount / 5);
   amount = ((amount)-(nickel*5));
   let penny = (amount / 1);
-  amount =(amount)-(penny*100);
+  amount =((amount)-(penny*100)).toFixed(0);
   let change = quarter+dime+nickel+penny;
   document.getElementById("output10").innerHTML=(change + " coins.");
   ////////////////////////// DO NOT MODIFY
